@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Grid</title>
+        <link rel="stylesheet" href="grid.css">
+        <style>                
+        .temp {
+            border: 2px solid black;
+            width: 30%;
+            /*margin-left: 35%;*/
+            margin-top: 5%;
+            padding: 10px;
+            background-color: rgb(249, 13, 245);
+        }
+        .form{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 10px;
+        }
+        button{
+            grid-column: span 2;
+           
+        }
+        </style>
+    </head>
+    <body> 
+        <center>
+        <nav>
+           
+        </nav>
+        <div class="temp">
+        <form class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="gender">Gender</label>
+            <input></input>
+            <input type="radio" id="male" name="gender" value="Male">Male</button>
+           
+            <input type="radio" id="female" name="gender" value="Female">Female</button>
+             <label for="Hobbies">Hobbies</label>
+            <input></input>
+            <input type="radio" id="book reading" name="Hobbies" value="book reading">book reading</button>
+            <input type="radio" id="singing" name="Hobbies" value="singing">singing</button>
+            <input type="radio" id="dancing" name="Hobbies" value="dancing">dancing</button>
+                <label for="password">Password</label>
+            <input type="text" id="password" name="password" >
+            
+            
+            <button type="submit" value="Submit" >Submit</button>
+        </form>
+        </div>
+        </center> 
+    </body>
+</html>
